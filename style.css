@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --font-family: 'Libre Franklin', sans-serif;
+
+  /* // Colors */
+
+  
+  /* // Primary */
+
+  --blue: #4f7df3;
+
+/* // Secondary */
+
+  --pale-blue: #c2d3ff;
+  --light-red: #ff5263;
+
+/* // Neutral */
+
+  --gray: #969696;
+  --very-dark-blue: #151f29;
+
+}
+
+html {
+
+font-size: 62.5%;  
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-family);
+}
+
+.container--gral{
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center;   */
+}
+
+.container--gral .text h1 {
+  font-size: calc(2.5rem + 1vw);
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.container--gral .text h1 .point {
+  color: var(--blue);
+  text-align: center;
+}
+
+.container--gral .text p:nth-child(2) {
+  margin-top: 4rem;
+  font-size: calc(2rem + 1vw);
+  color: var(--gray);
+  font-weight: 200;
+  text-align: center;
+}
+
+.container--gral .text p .soon {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.container--gral .text p:nth-child(3){
+  margin-top: 2.5rem;
+  color: var(--very-dark-blue);
+  font-size: calc(1rem + 1vw);
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+form .input,
+form .btn {
+  height: 40px;
+  width: 100%;
+}
+
+
+
+form .input {
+  padding: 1.2rem;
+  font-family: var(--font-family);
+  border: 1px solid var(--pale-blue);
+  border-radius: 50px;
+  outline: none;
+}
+
+
+.div-alert{
+  width: 100%;
+}
+
+.alert {
+  outline: 1px solid(--light-red);
+}
+
+form .input::placeholder{
+  color: #cac6c6;
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+form .btn {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  font-family: var(--font-family);
+  border: none;
+  background: var(--blue);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.img--container {
+  margin-top: 6rem;
+  width: 100%;
+  height: auto;
+}
+
+.social--container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.social--container .icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  
+}
+
+.fa-brands {
+  font-size: 2rem;
+}
+
+.terms {
+  margin: auto;
+  font-size: 1.2rem;
+  color: var(--very-dark-blue);
+  font-weight: 100;
+  margin-top: 2rem;
+}
+
+footer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.alert {
+  font-size: 1.2rem;
+  color: var(--light-red);
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin-top: .5rem;
+  
+}
+
+.border {
+  border: 1px solid var(--light-red) !important;
+}
+
+.alert-p {
+  display: none;
+}
+
+/* media Queries */
+
+
+
+/* @media screen and (min-width: 900px){
+} */
+
+@media screen and (min-width: 676px)and (max-width: 4500px){
+  form {
+    display: flex;
+    flex-direction: row;
+  }
+  form .btn {
+    margin-top: 0;
+    margin: 0 1rem;
+  }
+
+  .container--gral {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  form .input {
+    height: 50px;
+    width: 100%;
+  }
+  form .btn {
+    height: 50px;
+    width: 30%;
+    cursor: pointer;
+  }
+.alert {
+  text-align: start;
+  margin-left: 2rem;
+}
+
+  .social--container{
+    width: 20%;
+  }
+
+  .fa-brands{
+    cursor: pointer;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+  }
+
+  .icon:hover{
+    background: var(--blue);
+    border: none;
+  }
+  .fa-brands:hover{
+    
+    color: white !important;
+  }
+}
